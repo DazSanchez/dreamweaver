@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/edgrid.css">
+	<link rel="stylesheet" href="css/signup.css">
+	<title>Iniciar sesión</title>
+</head>
+<body>
+	<header class="header">
+		<div class="ed-container cross-center full-h container">
+			<div class="ed-item base-50 cross-center">
+				<a href="/">
+					<img class="logo" src="img/logo.png" alt="">
+				</a>
+			</div>
+			<div class="ed-item base-50 main-end">
+				<a class="btn btn--blue" href="login.html">Acceder</a>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="ed-container">
+			<div class="ed-item main-center more-margin">
+				<h1 class="title">Crea tu cuenta de Google</h1>
+			</div>
+			<div class="ed-item base-60">
+				<div class="ed-container info">
+					<div class="ed-item main-center">
+						<p class="info__title">Solo necesitas una cuenta</p>
+					</div>
+					<div class="ed-item main-center">
+						<p class="info__subtitle">Una cuenta gratuita te sirve para todos los servicios de Google.</p>
+					</div>
+					<div class="ed-item main-center">
+						<img class="info__img" src="img/services.png" alt="">
+					</div>
+				</div>
+				<div class="ed-container info">
+					<div class="ed-item main-center">
+						<p class="info__title">Lleva todo contigo</p>
+					</div>
+					<div class="ed-item main-center">
+						<p class="info__subtitle">Cambia de dispositivo y continúa en la última acción que hayas realizado</p>
+					</div>
+					<div class="ed-item main-center">
+						<img class="info__img" src="img/devices_1x.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="ed-item base-40">
+				<form class="form" action="https://accounts.google.com/SignUp" method="post">
+					<div class="ed-container">
+						<div class="ed-item form__group">
+							<label class="form__label" for="name"><strong>Nombre</strong></label>
+							<div class="justify">
+								<input class="form__input form__input--split" type="text" name="name" placeholder="Nombre">
+								<input class="form__input form__input--split form__input--right" type="text" name="lastname" placeholder="Apellido">
+							</div>
+						</div>
+						<div class="ed-item form__group">
+							<label class="form__label" for="user"><strong>Tu dirección de correo electrónico</strong></label>
+							<input class="form__input" type="text" name="user" placeholder="example@gmail.com">
+						</div>
+						<div class="ed-item form__group">
+							<label for="pwd" class="form__label"><strong>Crear una contraseña</strong></label>
+							<input type="password" class="form__input">
+						</div>
+						<div class="ed-item form__group">
+							<label for="re-pwd"><strong>Confirma tu contraseña</strong></label>
+							<input type="password" class="form__input">
+						</div>
+						<div class="ed-item form__group">
+							<label for="genre" class="form__label"><strong>Sexo</strong></label>
+							<input type="radio" class="form__input--radio" name="genre" value="H"><span>Hombre</span>
+							<input type="radio" class="form__input--radio" name="genre" value="M"><span>Mujer</span>
+							<input type="radio" class="form__input--radio" name="genre" value="O"><span>Otro</span>
+						</div>
+						<div class="ed-item form__group">
+							<label for="tel" class="form__label"><strong>Teléfono celular</strong></label>
+							<input type="text" class="form__input" placeholder="+52">
+						</div>
+						<div class="ed-item form__group main-end">
+							<input class="btn btn--blue" type="submit" value="Siguiente paso">
+						</div>
+					</div>
+				</form>
+				<div class="ed-container padding">
+					<div class="ed-item">
+						<p class="more-info"><a href="https://support.google.com/accounts/answer/1733224?hl=es-419">Más información</a> sobre por qué pedimos esta información.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

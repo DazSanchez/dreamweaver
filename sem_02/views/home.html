@@ -1,0 +1,23 @@
+<main id="home">
+  <div class="ed-container category" ng-repeat="category in categories">
+    <div class="ed-item category__title">
+      <h2>{{category.title}}</h2>
+    </div>
+    <div class="ed-item category__content">
+      <div class="ed-container">
+        <div class="ed-item movil-50 tablet-25" ng-repeat="animal in category.animals">
+          <div class="ed-container animal">
+            <div class="ed-item animal__title">
+              <h3>{{animal.title}}</h3>
+            </div>
+            <div class="ed-item animal__img">
+              <a ng-href="/animal/{{category.title}}/{{animal.title}}">
+                <img ng-src="/assets/img/{{animal.img}}" alt="{{animal.title}}" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

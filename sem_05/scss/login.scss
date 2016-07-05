@@ -1,0 +1,95 @@
+$gray: #f1f1f1;
+$blue: #4d90fe;
+
+body {
+	font-family: 'Roboto';
+}
+
+.main {
+	margin-top: 1.5em;
+}
+
+.logo {
+	$size:100px;
+	width: $size;
+	height: ($size/ 3);
+	display: inline-block;
+}
+
+.more-margin {
+	margin: 1em 0;
+}
+
+.title,
+.subtitle {
+	margin: .25em 0;
+}
+
+.title {
+	font-size: 2.5em;
+	font-weight: lighter;
+}
+
+.subtitle {
+	font-size: 1.2em;
+}
+
+.form {
+	background-color: lighten($gray,2%);
+	padding: 3em 1em;
+	width: 60%;
+	box-shadow: 0 5px 1px rgba(#000, .2);
+	border-radius: 5px;
+
+	&__group,
+	&__input {
+		width: 100%;
+	}
+
+	&__group {
+		text-align: center;
+	}
+
+	&__input {
+		line-height: 2em;
+		padding: 0 10px;
+		font-size: 1em;
+		margin: .25em 0;
+		color: darken($gray, 40%);
+	}
+
+	&__img {
+		$size: 80px;
+		margin-bottom: 2em;
+
+		width: $size;
+		height: $size;
+		border-radius: ($size / 2);
+		display: inline-block;
+	}
+
+	&__link {
+		font-size: .8em;
+		color: $blue;
+	}
+}
+
+.btn {
+	background-color: $blue;
+	color:#fff;
+	line-height: 2em;
+	display: inline-block;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.new_account {
+	color: $blue;
+}
+
+.text {
+	text-align: center;
+	color: darken($gray, 40%);
+	font-size: .8em;
+}

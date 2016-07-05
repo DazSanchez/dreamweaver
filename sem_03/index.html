@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="css/edgrid.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Google</title>
+</head>
+<body>
+  <nav class="menu ed-container main-end">
+    <a class="menu__item cross-center" href="https://mail.google.com">Gmail</a>
+    <a class="menu__item cross-center" href="https://images.google.com">Imágenes</a>
+    <a class="menu__item cross-center" href="#">
+      <i class="material-icons">view_module</i>
+    </a>
+    <a class="menu__item cross-center btn--login" href="https://accounts.google.com/ServiceLogin?hl=es&passive=true&continue=https://www.google.com.mx/#identifier">Iniciar sesión</a>
+  </nav>
+  
+  <main class="main center">
+    <div class="ed-container">
+      <div class="ed-item logo main-center">
+        <img src="img/logo.png" title="Google">
+      </div>
+      
+      <form action="https://www.google.com/search" method="GET" name="query" id="query"></form>
+      <div class="ed-item search">
+        <div class="ed-container">
+          <div class="ed-item search__field main-center">
+            <input type="text" name="q" form="query">
+            <a class="mic" href="#"><i class="material-icons">mic</i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ed-item search__buttons main-center">
+        <input class="search__btn" form="query" type="submit" value="Buscar con Google">
+        <input class="search__btn" form="query" type="submit" value="Me siento con suerte">
+      </div>
+
+      <div class="ed-item search__lang main-center">
+        <p>Google.com.mx ofrecido en: <a href="#"> Español (Latinoamérica)</a></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer ed-container between no-padding full">
+    <div class="ed-container footer__item web-50">
+        <a class="footer__link" href="#">Publicidad</a>
+        <a class="footer__link" href="#">Negocios</a>
+        <a class="footer__link" href="#">Acerca de</a>
+    </div>
+    <div class="ed-container footer__item web-50 main-end">
+        <a class="footer__link" href="#">Privacidad</a>
+        <a class="footer__link" href="#">Condiciones</a>
+        <a class="footer__link" href="#">Preferencias</a>
+        <a class="footer__link" href="#">Usar Google.com</a>
+    </div>
+  </footer>
+
+  <div class="copy">
+    <p>Creado por: Hugo Sánchez Velázquez</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      document.querySelector('.search__btn').forEach(function(el){
+        el.addEventListener('click', function(){
+          document.querySelector('#query').submit();
+        });
+      });
+    });
+  </script>
+</body>
+</html>

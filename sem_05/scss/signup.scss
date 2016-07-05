@@ -1,0 +1,105 @@
+$gray: #f1f1f1;
+$blue: #4d90fe;
+
+body {
+	font-family: 'Roboto', sans-serif;
+	overflow-x: hidden;
+}
+
+.container,
+.main {
+	max-width: 1000px;
+}
+
+.full-h {
+	height: 100%;
+}
+
+.header{
+	background: $gray;
+	width: 100vw;
+	height: 4em;
+}
+
+.logo {
+	width: 100px;
+	display: inline-block;
+}
+
+.btn {
+	display: inline-block;
+	line-height: 1.75em;
+	padding: 0 10px;
+	border-radius: 3px;
+	border: 0;
+
+	&--blue {
+		background-color: $blue;
+		color: #fff;
+	}
+}
+
+.title {
+	font-weight: lighter;
+}
+
+.more-margin {
+	margin: 2em;
+}
+
+.info {
+	margin-bottom: 2em;
+
+	&__title,
+	&__subtitle {
+		margin: .5em 0;
+	}
+
+	&__title {
+		font-size: 1.25em;
+	}
+
+	&__subtitle {
+		font-size: 0.85em;
+	}
+
+	&__img {
+		width: 50%;
+		height: auto;
+		margin: 1em;
+	}
+}
+
+.form {
+	background-color: $gray;
+	padding: 1em 0;
+
+	&__group {
+		margin: .5em 0;
+	}
+
+	&__label {
+		display: block;
+		margin: .25em 0;
+		font-size: 0.85em;
+	}
+
+	&__input {
+		width: 100%;
+		line-height: 2em;
+		padding: 0 10px;
+
+		&--split {
+			width: 47%;
+		}
+
+		&--right {
+			
+		}
+	}
+}
+
+.more-info {
+	font-size: .85em;
+	color: darken($gray,40%);
+}

@@ -1,0 +1,131 @@
+body {
+	overflow-x: hidden;
+	min-height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Arima Madurai', sans-serif;
+}
+
+main {
+	margin: .5em 0 1em;
+}
+
+#header {
+	background-color:#009688;
+	color:#fff;
+	width:100vw;
+}
+
+#footer {
+	background-color: #009688;
+	color:#fff;
+	text-align: center;
+}
+
+.copy {
+	line-height: 1.5em;
+}
+
+.title h1 {
+	margin:0;
+	padding:0 1em;
+	width:100%;
+	max-width:1100px;
+	line-height: 2em;
+}
+
+.title a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.navbar {
+	line-height: 3em;
+	color: #fff;
+	background-color: #00695C;
+	width: 100%;
+	/* height: calc(100vh - 5em); */
+	position: fixed;
+	left: -100%;
+	transition: left ease .3s;
+	z-index: 9999;
+}
+
+.menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar.open {
+	left: 0;
+}
+
+.menu__link {
+	text-decoration: none;
+	color:#fff;
+	display: block;
+	padding: 0 1em;
+}
+
+.menu__link:hover {
+	background-color: #004D40;
+}
+
+#toggle-menu {
+	background-color: #004D40;
+	cursor: pointer;
+	line-height: 3em;
+	color: #fff;
+}
+
+.category {
+	margin: 1em;
+}
+
+.category__title,
+.animal__title {
+	text-transform: capitalize;
+}
+
+.category__title {
+	border-bottom: 1px solid #ddd;
+}
+
+.category__title h2 {
+	margin: 0;
+}
+
+.animal__title h3 {
+	margin: 0;
+}
+
+.animal__img {
+	max-width: 200px;
+}
+
+@media screen and (min-width: 764px) {
+	.navbar {
+		left: 0;
+		position: relative;
+		z-index: auto;
+	}
+
+	.menu {
+		left: 0;
+		flex-direction: row;
+	}
+
+	.menu__link {
+		display: inline-block;
+	}
+
+	.title h1 {
+		padding: 0;
+	}
+}

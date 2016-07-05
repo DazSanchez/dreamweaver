@@ -1,0 +1,14 @@
+<div class="container">
+	<div class="item animated zoomIn" ng-repeat="animal in animals">
+		<div class="animal">
+			<div class="animal__img">
+				<a href="/animal/{{animal.name.common}}">
+					<img class="rounded" ng-src="img/{{animal.img_url}}" alt="animal.name.science" class="animal__img">
+				</a>
+			</div>
+			<div class="animal__name">
+				<h2><span class="animal__name__science">{{animal.name.science}}</span> <span class="animal__name__common">({{animal.name.common}})</span></h2>
+			</div>
+		</div>
+	</div>
+</div>

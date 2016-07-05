@@ -1,0 +1,88 @@
+body {
+  font-family: 'Roboto';
+}
+
+.main {
+  margin-top: 1.5em;
+}
+
+.logo {
+  width: 100px;
+  height: 33.33333px;
+  display: inline-block;
+}
+
+.more-margin {
+  margin: 1em 0;
+}
+
+.title,
+.subtitle {
+  margin: .25em 0;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: lighter;
+}
+
+.subtitle {
+  font-size: 1.2em;
+}
+
+.form {
+  background-color: #f6f6f6;
+  padding: 3em 1em;
+  width: 60%;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.form__group, .form__input {
+  width: 100%;
+}
+
+.form__group {
+  text-align: center;
+}
+
+.form__input {
+  line-height: 2em;
+  padding: 0 10px;
+  font-size: 1em;
+  margin: .25em 0;
+  color: #8b8b8b;
+}
+
+.form__img {
+  margin-bottom: 2em;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  display: inline-block;
+}
+
+.form__link {
+  font-size: .8em;
+  color: #4d90fe;
+}
+
+.btn {
+  background-color: #4d90fe;
+  color: #fff;
+  line-height: 2em;
+  display: inline-block;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new_account {
+  color: #4d90fe;
+}
+
+.text {
+  text-align: center;
+  color: #8b8b8b;
+  font-size: .8em;
+}

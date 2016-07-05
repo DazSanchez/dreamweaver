@@ -1,0 +1,18 @@
+<div class="animal">
+	<div class="card animated zoomIn">
+		<div class="card__header">
+			<div class="animal__img">
+				<img ng-src="img/{{animal.img_url}}" alt="{{animal.name.common}}">
+			</div>
+			<div class="animal__name">
+				<h2>{{ animal.name.common }}</h2>
+			</div>
+			<div class="animal__family">
+				<p>{{ animal.name.science }}</p>
+			</div>
+		</div>
+		<div class="card__content">
+			<p>{{ animal.description }}</p>
+		</div>
+	</div>
+</div>
